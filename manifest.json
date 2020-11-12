@@ -1,0 +1,13 @@
+{
+  "name": "Instagram Deblocker",
+  "version": "1.0",
+  "description": "Remove blocking elements when not authenticated to instagram",
+  "permissions": ["activeTab", "declarativeContent"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.instagram.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
